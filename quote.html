@@ -13,58 +13,98 @@
         <div class="logo">Monte Solutions</div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="news.html">Blog & News</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="terms.html">Privacy & Terms</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <section class="quote-hero">
-        <h1>Request a Quote</h1>
-        <p>Tell us about your event needs, and we'll provide a customized quote.</p>
-    </section>
+    <main>
+        <section class="hero-section">
+            <h2>Plan Your Event with Us</h2>
+            <p>Let us help you make your event memorable</p>
+            <div class="cta-buttons">
+                <button class="cta-button">Search events</button>
+                <button class="cta-button">Sign Up</button>
+            </div>
+        </section>
 
-    <section class="quote-form">
-        <h2>Get Your Personalized Quote</h2>
-        <form action="#" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+        <form class="event-form">
+            <h3>Event Details Form</h3>
+            <p>Provide us with the necessary details</p>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name">
+                <small>First and Last name</small>
+            </div>
 
-            <label for="event-type">Event Type</label>
-            <select id="event-type" name="event-type" required>
-                <option value="corporate">Corporate Event</option>
-                <option value="wedding">Wedding / Private Function</option>
-                <option value="conference">Conference / Exhibition</option>
-                <option value="special">Special Occasion</option>
-            </select>
+            <div class="form-group">
+                <label>Event Type</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="event-type" value="wedding"> Wedding
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="event-type" value="birthday"> Birthday
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="event-type" value="corporate"> Corporate
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="event-type" value="other"> Other
+                    </label>
+                </div>
+                <small>Select the type of event</small>
+            </div>
 
-            <label for="services">Services Required</label>
-            <select id="services" name="services" multiple required>
-                <option value="planning">Event Planning</option>
-                <option value="registration">Event Registration & Ticketing</option>
-                <option value="virtual">Virtual & Hybrid Event Solutions</option>
-                <option value="av">AV & Technical Support</option>
-                <option value="website">Website & App Development</option>
-            </select>
+            <div class="form-group">
+                <label>Budget</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="budget" value="1000-5000"> $1000-$5000
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="budget" value="5000-10000"> $5000-$10000
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="budget" value="10000-20000"> $10000-$20000
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="budget" value="20000+"> Above $20000
+                    </label>
+                </div>
+                <small>Select your budget range</small>
+            </div>
 
-            <label for="budget">Estimated Budget</label>
-            <input type="number" id="budget" name="budget" required>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+                <small>We'll keep you updated</small>
+            </div>
 
-            <label for="message">Additional Details</label>
-            <textarea id="message" name="message" rows="5"></textarea>
+            <div class="form-group">
+                <label>Services</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-option">
+                        <input type="checkbox" value="venue"> Venue Decoration
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" value="catering"> Catering
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" value="photography"> Photography
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" value="entertainment"> Entertainment
+                    </label>
+                </div>
+                <small>Select desired services</small>
+            </div>
 
-            <button type="submit">Get a Quote</button>
+            <button type="submit" class="submit-btn">Submit</button>
         </form>
-    </section>
+    </main>
 
     <footer>
         <div class="footer-grid">
