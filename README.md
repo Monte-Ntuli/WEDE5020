@@ -4,7 +4,7 @@
 - **Name**: Banele Kamohelo Mpho Ntuli  
 - **Student Number**: ST10493444  
 - **Module**: WEB DEVELOPMENT (INTRODUCTION) (WEDE5020)  
-- **Institution**: The Independent Institute of Education (The IIE)  
+- **Institution**: The Independent Institute of Education Rosebank College (The IIE)  
 - **Academic Year**: 2025  
 
 ---
