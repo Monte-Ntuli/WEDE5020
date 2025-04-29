@@ -161,7 +161,7 @@ nav a:hover {
 }
 
 .gallery-container img:hover {
-  transform: scale(1.05);
+  transform: scale(2.55);
 }
 
 .gallery-container iframe {
@@ -211,8 +211,15 @@ nav a:hover {
   border-radius: 0.75rem;
   position: relative;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Hover Effect */
+.testimonials blockquote:hover,
+.event-client-testimonials blockquote:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
 .testimonials blockquote p,
 .event-client-testimonials blockquote p {
   font-size: 1rem;
