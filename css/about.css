@@ -210,9 +210,6 @@ section {
 }
 
 .value-item {
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
-  padding: 2rem;
   position: relative;
   width: 100%;
   height: 200px;
@@ -221,7 +218,6 @@ section {
 }
 .value-item:hover {
   transform: rotateY(180deg);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .value-item .value-front,
@@ -253,8 +249,8 @@ section {
 }
 
 .value-item .value-back {
-  background-color: var(--color-emerald);
-  color: #fff;
+  background-color: #fff;
+  color: #000000;
   transform: rotateY(180deg);
   font-size: 2.5rem;
 }
@@ -270,7 +266,6 @@ section {
     grid-template-columns: 1fr;
   }
 }
-
 
 /* Team Section */
 .about-team {
