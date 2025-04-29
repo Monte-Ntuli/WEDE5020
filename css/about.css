@@ -18,9 +18,10 @@
 
 body {
   font-family: var(--font-primary);
-  background-color: var(--color-light);
-  color: var(--color-dark);
   line-height: 1.6;
+  font-size: 16px;
+  color: var(--color-dark);
+  background-color: var(--color-light);
 }
 
 a {
@@ -31,6 +32,41 @@ a {
 ul {
   list-style: none;
 }
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  font-weight: 400;
+  color: var(--color-dark);
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--color-emerald);
+}
+
 
 /* Header */
 header {
