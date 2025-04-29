@@ -1,0 +1,244 @@
+/* terms.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --color-navy: #1a2a6c;
+  --color-emerald: #2ecc71;
+  --color-light: #f9f9f9;
+  --color-dark: #333;
+  --font-primary: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-primary);
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-navy);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: var(--color-emerald);
+  }
+  
+
+.privacy-hero,
+.faq-hero,
+.hero-section {
+  background: linear-gradient(135deg, var(--color-navy), var(--color-emerald));
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.privacy-hero h1,
+.faq-hero h1,
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-policy,
+.terms-of-service,
+.faq-content {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  background: #fff;
+  margin-bottom: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.privacy-policy h2,
+.terms-of-service h2,
+.faq-content h2,
+.policies-section h2 {
+  color: var(--color-navy);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.terms-of-service ul {
+  padding-left: 1.5rem;
+}
+
+.terms-of-service li {
+  margin-bottom: 0.5rem;
+}
+
+.privacy-policy dt {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.privacy-policy dd {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.hero-section p {
+  margin: 0.5rem 0;
+}
+
+.get-started {
+  display: inline-block;
+  background: var(--color-emerald);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.get-started:hover {
+  background: #27ae60;
+}
+
+.contact-section {
+  padding: 3rem 2rem;
+  background-color: #fff;
+}
+
+.policies-section {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.policy-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.policy-card {
+  flex: 1 1 250px;
+  background: var(--color-light);
+  border: 2px solid var(--color-navy);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.policy-card:hover {
+  transform: translateY(-5px);
+}
+
+.policy-card h3 {
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-navy);
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-column h3 {
+    color: var(--color-gold);
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-column ul li a:hover {
+    color: var(--color-emerald);
+  }
+  
+  .bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+  }
+  
+  .bottom-footer .legal-links li {
+    display: inline;
+    margin-left: 1rem;
+  }
+  
+  .bottom-footer a:hover {
+    color: var(--color-emerald);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-section, .footer-grid {
+      grid-template-columns: 1fr;
+    }
+    .bottom-footer {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
