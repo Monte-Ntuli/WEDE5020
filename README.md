@@ -83,4 +83,13 @@ WEDE5020/
 ### Setup Instructions  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/Monte-Ntuli/WEDE5020.git  
+   git clone https://github.com/Monte-Ntuli/WEDE5020.git
+
+2. Open in your browser
+      Simply open index.html in your preferred browser.
+
+3. Edit & Preview
+      Modify HTML/CSS in the css/ folder and reload the page to see changes.
+
+4. Deploy
+   Host on Azure Static Web Apps or any static file server.
