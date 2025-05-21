@@ -301,3 +301,17 @@ footer {
     gap: 1rem;
   }
 }
+
+input:focus, textarea:focus {
+  border-color: var(--color-emerald);
+  outline: none;
+}
+
+.error-msg {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
