@@ -48,7 +48,7 @@
 
     <section class="gallery">
         <h2>Photo & Video Gallery</h2>
-        <div class="gallery-container">
+        <div class="gallery-container" id="galleryContainer">
             <img src="images/portfolio/al-elmes-ULHxWq8reao-unsplash.jpg" alt="Event 1" width="300px">
             <img src="images/portfolio/andrea-mininni-VLlkOJdzLG0-unsplash.jpg" alt="Event 2" width="300px">
             <img src="images/portfolio/brooke-lark-YwSy97_Rk1o-unsplash.jpg" alt="Event 3" width="300px">
@@ -63,10 +63,15 @@
             <br>
             <iframe width="824" height="438" src="https://www.youtube.com/embed/NIaUOFAjeDQ" title="Monte Ntuli" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+        <button id="toggleGallery">Show/Hide Gallery</button>
     </section>
 
     <section class="testimonials">
         <h2>Event Client Testimonials</h2>
+        <div class="testimonial-toggle">
+            <button id="prevTestimonial">Previous</button>
+            <button id="nextTestimonial">Next</button>
+        </div>
         <blockquote>
             <p>"Monte Solutions transformed our annual tech summit into a seamless hybrid experience. Their attention to detail and flawless execution allowed us to engage 1,200+ attendees across 15 countries. The custom event app they developed kept everyone connected!"</p>
             <img src="images/portfolio/product-school-xeEukPZjZi0-unsplash.jpg" alt="Event 1" width="200px">
@@ -190,5 +195,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/portfolio.js"></script>
 </body>
 </html>
