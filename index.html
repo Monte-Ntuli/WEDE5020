@@ -3,12 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monte Solutions | Home</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ✅ Title Tag: Use relevant keywords -->
+    <title>Monte Solutions | Event Planning & IT Services South Africa</title>
+
+    <!-- ✅ Meta Description: Helps search engines and social sharing -->
+    <meta name="description" content="Monte Solutions offers expert event planning and IT services in South Africa. We create unforgettable experiences with seamless technology integration.">
+
+    <!-- ✅ Canonical Tag: Avoid duplicate content -->
+    <link rel="canonical" href="https://www.montesolutions.co.za/">
+
+    <!-- Favicon & Fonts -->
     <link rel="icon" type="image/png" href="favicon.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- ✅ Open Graph Tags: For social media sharing -->
+    <meta property="og:title" content="Monte Solutions | Event Planning & IT Services">
+    <meta property="og:description" content="Creating extraordinary events through innovation and technology.">
+    <meta property="og:image" content="https://www.montesolutions.co.za/images/og-image.jpg">
+    <meta property="og:url" content="https://www.montesolutions.co.za/">
+    <meta property="og:type" content="website">
+
+    <!-- ✅ Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Monte Solutions | Event Planning & IT Services">
+    <meta name="twitter:description" content="Seamless event planning powered by expert IT solutions.">
+    <meta name="twitter:image" content="https://www.montesolutions.co.za/images/og-image.jpg">
+
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
@@ -70,16 +96,18 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us for exceptional event planning and IT solutions.</p>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+    <form action="/submit-form" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
 
     <footer>
         <div class="footer-grid">
@@ -119,6 +147,25 @@
         </div>
     </footer>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Monte Solutions",
+      "url": "https://www.montesolutions.co.za/",
+      "logo": "https://www.montesolutions.co.za/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+27-10-123-4567",
+        "contactType": "Customer Service"
+      },
+      "sameAs": [
+        "https://www.facebook.com/montesolutions",
+        "https://www.instagram.com/montesolutions"
+      ]
+    }
+    </script>
+    
     <script src="js/main.js"></script>
 </body>
 </html>
