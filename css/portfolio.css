@@ -23,8 +23,57 @@ body {
   line-height: 1.6;
 }
 
-.hidden {
-  display: none !important;
+.testimonials-carousel-section {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.testimonial-carousel {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.testimonial-carousel blockquote {
+  display: none;
+  background: #f9f9f9;
+  border-left: 5px solid var(--color-gold);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: opacity 0.5s ease;
+}
+
+.testimonial-carousel blockquote.active {
+  display: block;
+}
+
+.testimonial-carousel blockquote img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+
+.testimonial-controls {
+  margin-top: 1rem;
+}
+
+.testimonial-controls button {
+  background-color: var(--color-navy);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.testimonial-controls button:hover {
+  background-color: var(--color-emerald);
 }
 
 a {
