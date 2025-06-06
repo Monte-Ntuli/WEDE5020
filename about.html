@@ -19,22 +19,28 @@
   <link rel="stylesheet" href="css/about.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/png" href="favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-
 <body>
     <header>
-        <a href="index.html">
-            <div class="logo">Monte Solutions</div>
-            </a>
-        <nav>
-            <ul>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="quote.html">Request a Quote</a></li>
-            </ul>
-        </nav>
-    </header>
+    <a href="index.html" aria-label="Monte Solutions Home">
+      <div class="logo">Monte Solutions</div>
+    </a>
+
+    <div class="burger" id="burger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="nav-menu" aria-label="Main Navigation">
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="quote.html">Request a Quote</a></li>
+      </ul>
+    </nav>
+  </header>
     
     <section class="about-hero">
         <h1>About Monte Solutions</h1>
@@ -237,7 +243,7 @@
     ]
   }
   </script>
-    <script src="js/about.js"></script>
-    <script src="js/main.js"></script>
+  <script src="js/about.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
