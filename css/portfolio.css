@@ -23,6 +23,10 @@ body {
   line-height: 1.6;
 }
 
+.hidden {
+  display: none !important;
+}
+
 a {
   text-decoration: none;
   color: inherit;
