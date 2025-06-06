@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://montesolutions.netlify.app/sitemap.xml
