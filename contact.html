@@ -12,7 +12,14 @@
         content="Monte Solutions, contact, web development, IT services, business solutions, tech support" />
     <meta name="author" content="Monte Solutions" />
 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' fonts.googleapis.com; font-src fonts.gstatic.com;">
+    <meta http-equiv="Content-Security-Policy"
+  content="
+    default-src 'self';
+    script-src 'self' https://maps.googleapis.com https://maps.gstatic.com;
+    style-src 'self' fonts.googleapis.com;
+    font-src fonts.gstatic.com;
+    frame-src https://www.google.com https://www.google.com/maps;
+  ">
 
     <!-- Open Graph Meta Tags for Social Sharing -->
     <meta property="og:title" content="Contact Us | Monte Solutions" />
@@ -153,7 +160,7 @@
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+27-10-123-4567",
-        "contactType": "Customer Service"
+        "contactType": "Customer Service",
         "areaServed": "ZA",
         "availableLanguage": ["English"]
       },
