@@ -12,8 +12,11 @@
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' fonts.googleapis.com; font-src fonts.gstatic.com;">
-
+    <meta http-equiv="Content-Security-Policy" content="
+    style-src 'self' https://fonts.googleapis.com;
+    style-src-elem 'self' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com;">
+    
     <title>Event Planning & IT Services | Monte Solutions</title>
 
     <link rel="stylesheet" href="css/services.css">
